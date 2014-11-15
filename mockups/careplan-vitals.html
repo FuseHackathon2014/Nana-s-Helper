@@ -1,0 +1,86 @@
+<html>
+<head>
+	<title>Nana's Helper | Care Plan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+	<link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+	<link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css" />
+	<link rel="stylesheet" href="css/jquerymobile.nativedroid.color.purple.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div data-role="page" data-theme='b'>
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+			<h1>Care Plan</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a data-ajax="false" href="careplan.html">Checklist Settings</a></li>
+					<li><a data-ajax="false" href="careplan-vitals.html" class="ui-btn-active">Vitals Settings</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div><!-- /header -->
+		<div role="main" class="ui-content">
+			<form>
+                <ul data-role="listview" data-inset="true">
+        <!--
+        double freq = 1; // Frequency of daily checks
+        double evidence = 140.0; // Starting value
+        double max = 160.0; // Max normal value
+        double min = 120.0; // Min normal value
+        double maxRate = 2; // Max change rate
+        double minRate = -2; // Min change rate
+    	-->                    
+                    <li data-role="fieldcontain">
+                        <label for="select-choice-1b" class="select">Select Metric</label>
+                        <select name="select-choice-1" id="select-choice-1b" data-native-menu="true">
+                            <option value="weight">Blood Sugar</option>
+                            <option value="css">Pulse</option>
+                            <option value="html">Skin Condition</option>
+                            <option value="csharp">Temperature</option>
+                            <option selected value="java">Weight</option>
+                        </select>
+                    </li>
+                    <li data-role="fieldcontain">
+                        <label for="slider2b">How many times to check a day?:</label>
+                        <input type="range" name="slider2" id="slider2b" value="1" min="1" max="25" data-highlight="true">
+                    </li>
+                    <li data-role="fieldcontain">
+                        <div data-role='rangeslider'>
+                            <label for='rangeslider1a'>Normal Value Range:</label>
+                                <input type='range' name='range1a' id='range1a' min='0' max='200' value='120'>
+                            <label for='rangeslider1b'>RangeSlider:</label>
+                                <input type='range' name='range1b' id='range1b' min='0' max='200' value='160'>
+                        </div>
+                    </li>         
+                    <li data-role="fieldcontain">
+                        <label for="name3b">How much numeric change is normal?</label>
+                        <input type="text" name="name3" id="name3b" value="" data-clear-btn="true" placeholder="2">
+                    </li>
+                    <li data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+                            
+                        </fieldset>
+        			</li>
+                    <li data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+							<a href="#" class="ui-btn">Add Item</a>
+						</fieldset>
+                    </li>
+         		</ul>
+         	</form>
+		</div>
+		<div data-position="fixed" data-tap-toggle="false" data-role="footer" data-tap-toggle="false" data-theme='b'>
+			<div data-role="navbar">
+				<ul>
+					<li><a data-ajax="false" href="patient.html"><i class='blIcon fa fa-rotate-left'></i>Back</a></li>
+					<li><a data-ajax="false" href="settings.html"><i class='blIcon fa fa-cogs'></i>Settings</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+
+/* Layout */
+.ui-content {
+	text-align: center;
+}
+
+/* Text Styles */
+h1 {
+
+}
+.ui-header .ui-title, .ui-footer .ui-title {
+	margin: 3px 25px 7px 15px;
+}
+.footer p {
+	text-align: center;
+}
+.error {
+	color: red;
+}
+.warning {
+	color: orange;
+}

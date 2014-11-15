@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Nana's Helper | Vitals</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+	<link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+	<link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css" />
+	<link rel="stylesheet" href="css/jquerymobile.nativedroid.color.purple.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div data-role="page" data-theme='b'>
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+			<h1>Rose Mack's Vitals</h1>
+		</div><!-- /header -->
+		<div role="main" class="ui-content">
+			<form>
+                <ul data-role="listview" data-inset="true">
+        
+                    <li data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+                            Blood Sugar
+                            <input type="text" name="text-basic" id="text-basic" placeholder="80 mg/dL">
+                        </fieldset>
+                    </li>
+                    </li>
+                    <li data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+                        	<p><a data-ajax="false" href="vitals.html" class="ui-btn">Save</a></p>
+                        </fieldset>
+        			</li>
+             	</ul>
+			</form>
+		</div>
+		<div data-position="fixed" data-tap-toggle="false" data-role="footer" data-tap-toggle="false" data-theme='b'>
+			<div data-role="navbar">
+				<ul>
+					<li><a data-ajax="false" href="patient.html">
+						<i class='blIcon fa fa-users'></i>Home</a></li>
+					<li><a data-ajax="false" href="checklist.html">
+						<i class='blIcon fa fa-list'></i>Checklist</a></li>
+					<li><a data-ajax="false" href="home.html">
+						<i class='blIcon fa fa-gears'></i>Settings</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>Nana's Helper | Patient</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+	<link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+	<link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css" />
+	<link rel="stylesheet" href="css/jquerymobile.nativedroid.color.purple.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div data-role="page" data-theme='b'>
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+			<h1>Rose Mack</h1>
+		</div><!-- /header -->
+		<div role="main" class="ui-content">
+			<ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b">
+				<li><a data-ajax="false" href="checklist.html">
+					<i class='blIcon fa fa-list'></i>Checklist</a></li>
+				<li><a data-ajax="false" href="vitals.html">
+					<i class='blIcon fa fa-heart'></i>Vitals</a></li>
+				<li><a data-ajax="false" href="reports.html">
+					<i class='blIcon fa fa-bar-chart'></i>Reports</a></li>
+			</ul>
+
+			<form>
+                <ul data-role="listview" data-inset="true">
+                    <li data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+                        	<p><a data-ajax="false" href="careplan.html" class="ui-btn">
+                        		<i class='blIcon fa fa-plus-square'></i>Rose Mack's Care Plan</a></p>
+                        </fieldset>
+                    </li>
+        	</form>
+		</div>
+		<div data-position="fixed" data-tap-toggle="false" data-role="footer" data-tap-toggle="false" data-theme='b'>
+			<div data-role="navbar">
+				<ul>
+					<li><a data-ajax="false" href="patients.html">
+						<i class='blIcon fa fa-users'></i>Home</a></li>
+					<li><a data-ajax="false" href="settings.html">
+						<i class='blIcon fa fa-gears'></i>Settings</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

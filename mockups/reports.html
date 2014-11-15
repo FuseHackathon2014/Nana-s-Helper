@@ -1,0 +1,98 @@
+<html>
+<head>
+	<title>Nana's Helper | Reports</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+	<link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+	<link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css" />
+	<link rel="stylesheet" href="css/jquerymobile.nativedroid.color.purple.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div data-role="page" data-theme='b'>
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+			<h1>Rose Mack's Reports</h1>
+			<!--<div data-role="navbar" data-iconpos="left">
+				<ul>
+					<li>
+						<a data-icon="bars" href="#" class="ui-btn-active">Table</a>
+					</li>
+					<li><a data-icon="grid" href="#">Grid</a></li>
+				</ul>
+			</div> /navbar -->
+		</div><!-- /header -->
+		<div role="main" class="ui-content">
+			<div class='inset'>
+			<table data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-responsive table-stroke">
+				<thead>
+				<tr>
+					<th data-priority="1"></th>
+					<th data-priority="1">Item</th>
+					<th data-priority="2"><abbr title="Date">Last Updated</abbr></th>
+					<th data-priority="1">Value</th>
+					<th data-priority="3">Notes</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr class="error">
+					<td>!</td>
+					<td>Blood Pressure</td>
+					<td>11/14/14</td>
+					<td>135/88</td>
+					<td>High in the morning</td>
+				</tr>
+				<tr class="error">
+					<td>!</td>
+					<td>Medication #1</td>
+					<td>11/14/14</td>
+					<td>Missed Dose</td>
+					<td></td>
+				</tr>
+				<tr class="warning">
+					<td>*</td>
+					<td>Skin Condition</td>
+					<td>11/14/14</td>
+					<td>Mottling</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>Weight</td>
+					<td>11/14/14</td>
+					<td>168 lbs</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>Medication #2</td>
+					<td>11/14/14</td>
+					<td>Current</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>Blood Sugar</td>
+					<td>11/14/14</td>
+					<td>80 mg/dL</td>
+					<td></td>
+				</tr>
+			</tbody>
+			</table>
+			</div>
+		</div>
+		<div data-position="fixed" data-tap-toggle="false" data-role="footer" data-tap-toggle="false" data-theme='b'>
+			<div data-role="navbar">
+				<ul>
+					<li><a data-ajax="false" href="patient.html"><i class='blIcon fa fa-users'></i>Home</a></li>
+					<li><a data-ajax="false" href="settings.html"><i class='blIcon fa fa-cogs'></i>Settings</a></li>
+					<li><a data-ajax="false" href="#"><i class='blIcon fa fa-archive'></i>Export</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
